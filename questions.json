@@ -88,7 +88,7 @@
             ]
         },
         {
-            "title" : "What superpower do you want to have??", 
+            "title" : "What superpower do you want to have?", 
             "responses" : [
                 {
                     "key" : "A",
@@ -105,35 +105,23 @@
             ]
         },
         {
-            "title" : "What is your Strength?", 
+            "title" : "What weapon would you want to have?", 
             "responses" : [
                 {
                     "key" : "A",
-                    "description" : "You're trustworthy"
+                    "description" : "None"
                 },
                 {
                     "key" : "B",
-                    "description" : "You're passionate"
+                    "description" : "Trident"
                 },
                 {
                     "key" : "C",
-                    "description" : "You're protective"
+                    "description" : "Claws"
                 },
                 {
                     "key" : "D",
-                    "description" : "You have good gut feelings"
-                },
-                {
-                    "key" : "E",
-                    "description" : "You're intelligent"
-                },
-                {
-                    "key" : "F",
-                    "description" : "You use anger to your advantage"
-                },
-                {
-                    "key" : "G",
-                    "description" : "You have a good heart"
+                    "description" : "Armor"
                 }
             ]
         },
