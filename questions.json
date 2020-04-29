@@ -119,6 +119,204 @@
                     "description" : "You have a good heart"
                 }
             ]
+        },
+        {
+            "title" : "What is your Strength?", 
+            "responses" : [
+                {
+                    "key" : "A",
+                    "description" : "You're trustworthy"
+                },
+                {
+                    "key" : "B",
+                    "description" : "You're passionate"
+                },
+                {
+                    "key" : "C",
+                    "description" : "You're protective"
+                },
+                {
+                    "key" : "D",
+                    "description" : "You have good gut feelings"
+                },
+                {
+                    "key" : "E",
+                    "description" : "You're intelligent"
+                },
+                {
+                    "key" : "F",
+                    "description" : "You use anger to your advantage"
+                },
+                {
+                    "key" : "G",
+                    "description" : "You have a good heart"
+                }
+            ]
+        },
+        {
+            "title" : "What is your Strength?", 
+            "responses" : [
+                {
+                    "key" : "A",
+                    "description" : "You're trustworthy"
+                },
+                {
+                    "key" : "B",
+                    "description" : "You're passionate"
+                },
+                {
+                    "key" : "C",
+                    "description" : "You're protective"
+                },
+                {
+                    "key" : "D",
+                    "description" : "You have good gut feelings"
+                },
+                {
+                    "key" : "E",
+                    "description" : "You're intelligent"
+                },
+                {
+                    "key" : "F",
+                    "description" : "You use anger to your advantage"
+                },
+                {
+                    "key" : "G",
+                    "description" : "You have a good heart"
+                }
+            ]
+        },
+        {
+            "title" : "What is your Strength?", 
+            "responses" : [
+                {
+                    "key" : "A",
+                    "description" : "You're trustworthy"
+                },
+                {
+                    "key" : "B",
+                    "description" : "You're passionate"
+                },
+                {
+                    "key" : "C",
+                    "description" : "You're protective"
+                },
+                {
+                    "key" : "D",
+                    "description" : "You have good gut feelings"
+                },
+                {
+                    "key" : "E",
+                    "description" : "You're intelligent"
+                },
+                {
+                    "key" : "F",
+                    "description" : "You use anger to your advantage"
+                },
+                {
+                    "key" : "G",
+                    "description" : "You have a good heart"
+                }
+            ]
+        },
+        {
+            "title" : "What is your Strength?", 
+            "responses" : [
+                {
+                    "key" : "A",
+                    "description" : "You're trustworthy"
+                },
+                {
+                    "key" : "B",
+                    "description" : "You're passionate"
+                },
+                {
+                    "key" : "C",
+                    "description" : "You're protective"
+                },
+                {
+                    "key" : "D",
+                    "description" : "You have good gut feelings"
+                },
+                {
+                    "key" : "E",
+                    "description" : "You're intelligent"
+                },
+                {
+                    "key" : "F",
+                    "description" : "You use anger to your advantage"
+                },
+                {
+                    "key" : "G",
+                    "description" : "You have a good heart"
+                }
+            ]
+        },
+        {
+            "title" : "What is your Strength?", 
+            "responses" : [
+                {
+                    "key" : "A",
+                    "description" : "You're trustworthy"
+                },
+                {
+                    "key" : "B",
+                    "description" : "You're passionate"
+                },
+                {
+                    "key" : "C",
+                    "description" : "You're protective"
+                },
+                {
+                    "key" : "D",
+                    "description" : "You have good gut feelings"
+                },
+                {
+                    "key" : "E",
+                    "description" : "You're intelligent"
+                },
+                {
+                    "key" : "F",
+                    "description" : "You use anger to your advantage"
+                },
+                {
+                    "key" : "G",
+                    "description" : "You have a good heart"
+                }
+            ]
+        },
+        {
+            "title" : "What is your Strength?", 
+            "responses" : [
+                {
+                    "key" : "A",
+                    "description" : "You're trustworthy"
+                },
+                {
+                    "key" : "B",
+                    "description" : "You're passionate"
+                },
+                {
+                    "key" : "C",
+                    "description" : "You're protective"
+                },
+                {
+                    "key" : "D",
+                    "description" : "You have good gut feelings"
+                },
+                {
+                    "key" : "E",
+                    "description" : "You're intelligent"
+                },
+                {
+                    "key" : "F",
+                    "description" : "You use anger to your advantage"
+                },
+                {
+                    "key" : "G",
+                    "description" : "You have a good heart"
+                }
+            ]
         }
     ]
 }
