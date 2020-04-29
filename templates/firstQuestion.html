@@ -11,7 +11,8 @@
     <h1>Which Superhero are you?</h1>
 
 <img src = "/static/allherospicture.jpg" width="500">
-<li class="question-list"><!--
+<div id="anotherOne">
+    <div class="question-list"><!--
 
     <h3>What is you biggest weakness?</h3>
     
@@ -49,12 +50,10 @@
         <input type="radio" name="q1" id="q1G" value="G" />
         <label for="q1G">G) You are insensitive to others.</label>
     </div>-->
-</li>
-<input type='submit' value='Submit answer' />
-<input type='button' value='Next Question'/>
-
-
-<input type='submit' value='Submit answer' />
+    </div>
+</div>
+<br>
+<button onclick="nextQuestion();">Next Question</button>
 
 <br><br><b><!-- Beginning of new question--> 
 
@@ -63,6 +62,7 @@
 <script type="text/javascript">
     var questions;
     var answers = [];
+    var answerChoices = ['A','B','C','D','E','F','G']
 
     var route = "data";
     var callback = function(returned_json) {
@@ -78,20 +78,58 @@
             return;
         }
         if (questions.length == answers.length) {
-            console.log('Good job.')
+            alert('Good job.');
         }
         else {
             var index = answers.length
             var questionTitle = questions[index]['title']
             var questionResponses= questions[index]['responses']
-            $(".question-list").append("<h3>"+questionTitle+"</h3>");
-            $(".question-list").append("<input type=\"radio\" name=\"q\" value=\"A\");
+            $(".question-list").append("<h2>"+questionTitle+"</h2>");
+
+            for (i = 0; i <= questionResponses.length; i++) {       //displays all the radios and answer choices
+            $(".question-list").append("<input type=\"radio\" name=\"q\" value=\""+answerChoices[i]+"\" /><label>"+answerChoices[i]+") "+questions[index]['responses'][i]['description']+"</label><br>");
+            }
 
         }
         
     }
 
     function nextQuestion() {
+        var q = document.getElementsByName("q");
+        if (q[0].checked) {
+            alert('A');
+            answers.push('A');
+        }
+        else if (q[1].checked) {
+            alert('B');
+            answers.push('B');
+        }
+        else if (q[2].checked) {
+            alert('C');
+            answers.push('C');
+        }
+        else if (q[3].checked) {
+            alert('D');
+            answers.push('D');
+        }
+        else if (q[4].checked) {
+            alert('E');
+            answers.push('E');
+        }
+        else if (q[5].checked) {
+            alert('F');
+            answers.push('F');
+        }
+        else if (q[6].checked) {
+            alert('G');
+            answers.push('G');
+        }
+        $('.question-list').remove();
+        $('#anotherOne').append("<div class = \"question-list\"></div>")
+        updateUI();
+    }
+
+    function result() {
         
     }
 </script>
