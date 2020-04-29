@@ -126,35 +126,23 @@
             ]
         },
         {
-            "title" : "What is your Strength?", 
+            "title" : "Who is the first person you would save from danger?", 
             "responses" : [
                 {
                     "key" : "A",
-                    "description" : "You're trustworthy"
+                    "description" : "Elderly man"
                 },
                 {
                     "key" : "B",
-                    "description" : "You're passionate"
+                    "description" : "Woman in her 30s"
                 },
                 {
                     "key" : "C",
-                    "description" : "You're protective"
+                    "description" : "A baby"
                 },
                 {
                     "key" : "D",
-                    "description" : "You have good gut feelings"
-                },
-                {
-                    "key" : "E",
-                    "description" : "You're intelligent"
-                },
-                {
-                    "key" : "F",
-                    "description" : "You use anger to your advantage"
-                },
-                {
-                    "key" : "G",
-                    "description" : "You have a good heart"
+                    "description" : "A child"
                 }
             ]
         },
