@@ -55,35 +55,35 @@
             ]
         },
          {
-            "title" : "What is your weakness?", 
+            "title" : "What is your Strength?", 
             "responses" : [
                 {
                     "key" : "A",
-                    "description" : "You try to do too much"
+                    "description" : "You're trustworthy"
                 },
                 {
                     "key" : "B",
-                    "description" : "Psychological trauma from the past"
+                    "description" : "You're passionate"
                 },
                 {
                     "key" : "C",
-                    "description" : "You rely on others too much"
+                    "description" : "You're protective"
                 },
                 {
                     "key" : "D",
-                    "description" : "You love attention"
+                    "description" : "You have good gut feelings"
                 },
                 {
                     "key" : "E",
-                    "description" : "Your ego"
+                    "description" : "You're intelligent"
                 },
                 {
                     "key" : "F",
-                    "description" : "You're destructive"
+                    "description" : "You use anger to your advantage"
                 },
                 {
                     "key" : "G",
-                    "description" : "You are insensitive to others"
+                    "description" : "You have a good heart"
                 }
             ]
         }
