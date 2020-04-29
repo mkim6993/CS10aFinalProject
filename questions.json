@@ -53,7 +53,40 @@
                     "description" : "Motorcycle"
                 }
             ]
-        }
+        },
+        {
+            "title" : "What is your weakness?", 
+            "responses" : [
+                {
+                    "key" : "A",
+                    "description" : "You try to do too much"
+                },
+                {
+                    "key" : "B",
+                    "description" : "Psychological trauma from the past"
+                },
+                {
+                    "key" : "C",
+                    "description" : "You rely on others too much"
+                },
+                {
+                    "key" : "D",
+                    "description" : "You love attention"
+                },
+                {
+                    "key" : "E",
+                    "description" : "Your ego"
+                },
+                {
+                    "key" : "F",
+                    "description" : "You're destructive"
+                },
+                {
+                    "key" : "G",
+                    "description" : "You are insensitive to others"
+                }
+            ]
+        },
     ]
 }
 
