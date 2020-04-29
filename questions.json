@@ -164,101 +164,61 @@
             ]
         },
         {
-            "title" : "What is your Strength?", 
+            "title" : "What high school club were you a part of?", 
             "responses" : [
                 {
                     "key" : "A",
-                    "description" : "You're trustworthy"
+                    "description" : "Science clubs"
                 },
                 {
                     "key" : "B",
-                    "description" : "You're passionate"
+                    "description" : "Drama club"
                 },
                 {
                     "key" : "C",
-                    "description" : "You're protective"
-                },
-                {
-                    "key" : "D",
-                    "description" : "You have good gut feelings"
-                },
-                {
-                    "key" : "E",
-                    "description" : "You're intelligent"
-                },
-                {
-                    "key" : "F",
-                    "description" : "You use anger to your advantage"
-                },
-                {
-                    "key" : "G",
-                    "description" : "You have a good heart"
+                    "description" : "Student council"
                 }
             ]
         },
         {
-            "title" : "What is your Strength?", 
+            "title" : "What are you more likely to do during quarantine?", 
             "responses" : [
                 {
                     "key" : "A",
-                    "description" : "You're trustworthy"
+                    "description" : "Read a book"
                 },
                 {
                     "key" : "B",
-                    "description" : "You're passionate"
+                    "description" : "Watch netflix"
                 },
                 {
                     "key" : "C",
-                    "description" : "You're protective"
+                    "description" : "Work on a personal project"
                 },
                 {
                     "key" : "D",
-                    "description" : "You have good gut feelings"
-                },
-                {
-                    "key" : "E",
-                    "description" : "You're intelligent"
-                },
-                {
-                    "key" : "F",
-                    "description" : "You use anger to your advantage"
-                },
-                {
-                    "key" : "G",
-                    "description" : "You have a good heart"
+                    "description" : "Exercise"
                 }
             ]
         },
         {
-            "title" : "What is your Strength?", 
+            "title" : "What is your favorite TV/Movie genre?", 
             "responses" : [
                 {
                     "key" : "A",
-                    "description" : "You're trustworthy"
+                    "description" : "Action"
                 },
                 {
                     "key" : "B",
-                    "description" : "You're passionate"
+                    "description" : "Horror"
                 },
                 {
                     "key" : "C",
-                    "description" : "You're protective"
+                    "description" : "Comedy"
                 },
                 {
                     "key" : "D",
-                    "description" : "You have good gut feelings"
-                },
-                {
-                    "key" : "E",
-                    "description" : "You're intelligent"
-                },
-                {
-                    "key" : "F",
-                    "description" : "You use anger to your advantage"
-                },
-                {
-                    "key" : "G",
-                    "description" : "You have a good heart"
+                    "description" : "Adventure"
                 }
             ]
         }
