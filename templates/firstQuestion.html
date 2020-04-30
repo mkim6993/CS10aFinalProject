@@ -3,7 +3,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <title>Superhero</title>
     <style>
-        
+        body {
+            background: #B1DDE7;
+        }
+
     </style>
 </head>
     
@@ -16,7 +19,7 @@
     <div class="question-list"></div>
 </div>
 <br>
-<button onclick="nextQuestion();">Next Question</button>
+<button onclick="nextQuestion();" id="nextQuestion">Next Question</button>
 
 <br><br><b>
 
@@ -87,7 +90,10 @@
     function getSuperhero() {
         var callback = function(returned_json) {
             var hero = returned_json['hero'];
-            alert("YOU ARE "+hero);
+            $(".question-list").append("<h2> You are..."+hero+"</h2>");
+            $('#nextQuestion').remove();
+            $('.question-list').append("<a href=\"/\">Go back home</a>");
+
         }
         var data = JSON.stringify({"answers": answers});
         $.post("/getSuperhero", data, callback);
