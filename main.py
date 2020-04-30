@@ -3,7 +3,9 @@ import json
 
 app = Flask(__name__, template_folder='templates')
 
-
+def superhero(answers):
+    # TODO : return correct superhero based on answers
+    return "superman"
 
 @app.route('/')
 def main():
@@ -16,17 +18,20 @@ def data():
         data = json.load(json_file)
         return data 
 
-@app.route('/first',methods=['GET','POST'])
-def firstQuestion():
-    if request.method == "POST":
-        answer = request.form["q1"]
+@app.route('/getSuperhero', methods=['POST'])
+def getSuperhero():
+    # ImmutableMultiDict([('{"answers":["D","D","F","C","D","D","C","C","D","D"]}', '')])
+    # {'{"answers":["G","D"]}': ''}
+    # {'answers': ['G', 'D']}
+    data = list(request.form.to_dict().keys())[0]
+    data = json.loads(data)
+    answers = data['answers']
+    print(answers)
 
-    else:
-        return render_template('testQ.html')
 
-@app.route("/<usr>")
-def user(usr):
-    return f"<h1>{usr}</h1>"
+
+    hero = superhero(answers)
+    return {"hero" : hero}
 
 if __name__ == "__main__":
     app.debug = True

@@ -78,7 +78,7 @@
             return;
         }
         if (questions.length == answers.length) {
-            alert('Good job.');
+            getSuperhero();
         }
         else {
             var index = answers.length
@@ -97,31 +97,24 @@
     function nextQuestion() {
         var q = document.getElementsByName("q");
         if (q[0].checked) {
-            alert('A');
             answers.push('A');
         }
         else if (q[1].checked) {
-            alert('B');
             answers.push('B');
         }
         else if (q[2].checked) {
-            alert('C');
             answers.push('C');
         }
         else if (q[3].checked) {
-            alert('D');
             answers.push('D');
         }
         else if (q[4].checked) {
-            alert('E');
             answers.push('E');
         }
         else if (q[5].checked) {
-            alert('F');
             answers.push('F');
         }
         else if (q[6].checked) {
-            alert('G');
             answers.push('G');
         }
         $('.question-list').remove();
@@ -129,8 +122,16 @@
         updateUI();
     }
 
-    function result() {
-        
+    function getSuperhero() {
+        var callback = function(returned_json) {
+            console.log("got superhero");
+            console.log(returned_json);
+            var hero = returned_json['hero'];
+            alert("YOU ARE "+hero);
+        }
+        var data = {"answers": answers};
+        $.post("/getSuperhero", JSON.stringify(data), callback);
+
     }
 </script>
 </html>
