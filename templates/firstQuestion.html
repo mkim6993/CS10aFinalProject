@@ -32,20 +32,20 @@
 
     var route = "data";
     var callback = function(returned_json) {
-    questions = returned_json["questions"];
+    questions = returned_json["questions"]; // returns all the information in question key in json file
     updateUI();
     };
 
-    $.getJSON(route, callback);
+    $.getJSON(route, callback); //get request. gets information from 'questions' from "data" endpoint
 
     function updateUI(){
-        if (questions == null) {
+        if (questions == null) { // returns nothing if callback is not completed
             return;
         }
-        if (questions.length == answers.length) {
+        if (questions.length == answers.length) { //if all questions are answered, returns result
             getSuperhero();
         }
-        else {
+        else { // displays question and populates question-list div with all the answer choices
             var index = answers.length
             var questionTitle = questions[index]['title']
             var questionResponses= questions[index]['responses']
@@ -59,7 +59,7 @@
         
     }
 
-    function nextQuestion() {
+    function nextQuestion() { // inputs user answer into list to be used to calculate result
         var q = document.getElementsByName("q");
         if (q[0].checked) {
             answers.push('A');
@@ -87,7 +87,7 @@
         updateUI();
     }
 
-    function getSuperhero() {
+    function getSuperhero() { // displays result after all questions are answered
         var callback = function(returned_json) {
             var hero = returned_json['hero'];
             $(".question-list").append("<h2> You are..."+hero+"</h2>");

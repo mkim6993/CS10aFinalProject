@@ -148,17 +148,18 @@ def superhero(answers):
     elif q10 == 'D':
         counter['Wolverin'] += 1
 
-    return max(counter, key=counter.get)
+    return max(counter, key=counter.get) # calculates which superhero user got given a list of the answers from the quiz
 
 
  
 @app.route('/')
-def main():
+def main(): 
    # return render_template('main.html')
    return render_template('firstQuestion.html')
 
 @app.route('/data')
 def data():
+    # retrieves questions and possible answers from json file
     with open('questions.json') as json_file:
         data = json.load(json_file)
         return data 
@@ -170,10 +171,10 @@ def getSuperhero():
     # {'answers': ['G', 'D']}
     data = list(request.form.to_dict().keys())[0]
     data = json.loads(data)
-    answers = data['answers']
+    answers = data['answers'] #retrieves answer input in list format
 
     hero = superhero(answers)
-    return {"hero" : hero}
+    return {"hero" : hero} #returns key pair with which superhero the user got
 
 if __name__ == "__main__":
     app.debug = True
