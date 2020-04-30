@@ -26,10 +26,7 @@ def getSuperhero():
     data = list(request.form.to_dict().keys())[0]
     data = json.loads(data)
     answers = data['answers']
-    print(answers)
-
-
-
+    
     hero = superhero(answers)
     return {"hero" : hero}
 

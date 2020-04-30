@@ -1,61 +1,24 @@
 <html>
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <title>Superhero</title>
     <style>
         
     </style>
 </head>
-
+    
     <body>
     
     <h1>Which Superhero are you?</h1>
 
 <img src = "/static/allherospicture.jpg" width="500">
 <div id="anotherOne">
-    <div class="question-list"><!--
-
-    <h3>What is you biggest weakness?</h3>
-    
-    <div>
-        <input type="radio" name="q1" id="q1A" value="A" />
-        <label for="q1A">A) You try to do too much </label>
-    </div>
-    
-    <div>
-        <input type="radio" name="q1" id="q1B" value="B" />
-        <label for="q1B">B) Psychological trauma from the past</label>
-    </div>
-    
-    <div>
-        <input type="radio" name="q1" id="q1C" value="C" />
-        <label for="q1C">C) You rely on others too much</label>
-    </div>
-    
-    <div>
-        <input type="radio" name="q1" id="q1D" value="D" />
-        <label for="q1D">D) You love attention</label>
-    </div>
-
-    <div>
-        <input type="radio" name="q1" id="q1E" value="E" />
-        <label for="q1E">E) Your ego</label>
-    </div>
-
-    <div>
-        <input type="radio" name="q1" id="q1F" value="F" />
-        <label for="q1F">F) You're destructive</label>
-    </div>
-
-    <div>
-        <input type="radio" name="q1" id="q1G" value="G" />
-        <label for="q1G">G) You are insensitive to others.</label>
-    </div>-->
-    </div>
+    <div class="question-list"></div>
 </div>
 <br>
 <button onclick="nextQuestion();">Next Question</button>
 
-<br><br><b><!-- Beginning of new question--> 
+<br><br><b>
 
 </body>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js" ></script>
@@ -67,7 +30,6 @@
     var route = "data";
     var callback = function(returned_json) {
     questions = returned_json["questions"];
-    console.log(questions);
     updateUI();
     };
 
@@ -86,8 +48,8 @@
             var questionResponses= questions[index]['responses']
             $(".question-list").append("<h2>"+questionTitle+"</h2>");
 
-            for (i = 0; i <= questionResponses.length; i++) {       //displays all the radios and answer choices
-            $(".question-list").append("<input type=\"radio\" name=\"q\" value=\""+answerChoices[i]+"\" /><label>"+answerChoices[i]+") "+questions[index]['responses'][i]['description']+"</label><br>");
+            for (i = 0; i < questionResponses.length; i++) {       //displays all the radios and answer choices
+            $(".question-list").append("<input type=\"radio\" name=\"q\" value=\""+answerChoices[i]+"\" /><label>"+answerChoices[i]+") "+questions[index]['responses'][i]+"</label><br>");
             }
 
         }
@@ -124,13 +86,11 @@
 
     function getSuperhero() {
         var callback = function(returned_json) {
-            console.log("got superhero");
-            console.log(returned_json);
             var hero = returned_json['hero'];
             alert("YOU ARE "+hero);
         }
-        var data = {"answers": answers};
-        $.post("/getSuperhero", JSON.stringify(data), callback);
+        var data = JSON.stringify({"answers": answers});
+        $.post("/getSuperhero", data, callback);
 
     }
 </script>
