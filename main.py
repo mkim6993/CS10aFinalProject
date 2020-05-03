@@ -66,7 +66,7 @@ def superhero(answers):
         counter['Hulk'] += 1
         counter['Batman'] += 1
         counter['Aquaman'] += 1
-        Wolverin += 1
+        counter['Wolverine'] += 1
     elif q4 == 'B':
         counter['Spiderman'] += 1
     elif q4 == 'C':
@@ -147,7 +147,7 @@ def superhero(answers):
         counter['Aquaman'] += 1
     elif q10 == 'D':
         counter['Wolverine'] += 1
-
+    
     return max(counter, key=counter.get) # calculates which superhero user got given a list of the answers from the quiz
  
 @app.route('/')
