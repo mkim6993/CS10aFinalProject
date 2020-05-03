@@ -6,7 +6,7 @@ app = Flask(__name__, template_folder='templates')
 def superhero(answers):
     # TODO : return correct superhero based on answers
     counter = {
-    'Wonderman' : 0,
+    'Wonderwoman' : 0,
     'Batman' : 0,
     'Aquaman' : 0,
     'Spiderman' : 0,
@@ -17,7 +17,7 @@ def superhero(answers):
 
     q1 = answers[0]
     if q1 == 'A':
-        counter['Wonderman'] += 1
+        counter['Wonderwoman'] += 1
     elif q1 == 'B':
         counter['Batman'] += 1
     elif q1 == 'C':
@@ -29,11 +29,11 @@ def superhero(answers):
     elif q1 == 'F':
         counter['Hulk'] += 1
     elif q1 == 'G':
-        counter['Wolverin'] += 1  
+        counter['Wolverine'] += 1  
 
     q2 = answers[1]
     if q2 == 'A':
-        counter['Wonderman'] += 1
+        counter['Wonderwoman'] += 1
         counter['Spiderman'] += 1
         counter['Aquaman'] += 1
     elif q2 == 'B':
@@ -42,11 +42,11 @@ def superhero(answers):
     elif q2 == 'C':
         counter['Ironman'] += 1
     elif q2 == 'D':
-        counter['Wolverin'] += 1
+        counter['Wolverine'] += 1
 
     q3 = answers[2]
     if q3 == 'A':
-        counter['Wonderman'] += 1
+        counter['Wonderwoman'] += 1
     elif q3 == 'B':
         counter['Batman'] += 1
     elif q3 == 'C':
@@ -58,11 +58,11 @@ def superhero(answers):
     elif q3 == 'F':
         counter['Hulk'] += 1
     elif q3 == 'G':
-        counter['Wolverin'] += 1 
+        counter['Wolverine'] += 1 
 
     q4 = answers[3]
     if q4 == 'A':
-        counter['Wonderman'] += 1
+        counter['Wonderwoman'] += 1
         counter['Hulk'] += 1
         counter['Batman'] += 1
         counter['Aquaman'] += 1
@@ -74,13 +74,13 @@ def superhero(answers):
 
     q5 = answers[4]
     if q5 == 'A':
-        counter['Wonderman'] += 1
+        counter['Wonderwoman'] += 1
         counter['Hulk'] += 1
         counter['Spiderman'] += 1
     elif q5 == 'B':
         counter['Aquaman'] += 1
     elif q5 == 'C':
-        counter['Wolverin'] += 1
+        counter['Wolverine'] += 1
     elif q5 == 'D':
         counter['Ironman'] += 1
         counter['Batman'] += 1
@@ -95,20 +95,20 @@ def superhero(answers):
         counter['Spiderman'] += 1
         counter['Aquaman'] += 1
     elif q6 == 'D':
-        counter['Wolverin'] += 1
-        counter['Wonderman'] += 1
+        counter['Wolverine'] += 1
+        counter['Wonderwoman'] += 1
 
     q7 = answers[6]
     if q7 == 'A':
         counter['Ironman'] += 1
         counter['Hulk'] += 1
-        counter['Wolverin'] += 1
+        counter['Wolverine'] += 1
         counter['Aquaman'] += 1
         counter['Spiderman'] += 1
     elif q7 == 'B':
         counter['Batman'] += 1
     elif q7 == 'C':
-        counter['Wonderman'] += 1
+        counter['Wonderwoman'] += 1
 
     q8 = answers[7]
     if q8 == 'A':
@@ -118,16 +118,16 @@ def superhero(answers):
         counter['Aquaman'] += 1
         counter['Spiderman'] += 1
     elif q8 == 'C':
-        counter['Wonderman'] += 1
+        counter['Wonderwoman'] += 1
         counter['Batman'] += 1
-        counter['Wolverin'] += 1
+        counter['Wolverine'] += 1
 
     q9 = answers[8]
     if q9 == 'A':
         counter['Hulk'] += 1
-        counter['Wonderman'] += 1
+        counter['Wonderwoman'] += 1
     elif q9 == 'B':
-        counter['Wolverin'] += 1
+        counter['Wolverine'] += 1
         counter['Spiderman'] += 1
     elif q9 == 'C':
         counter['Ironman'] += 1
@@ -137,20 +137,18 @@ def superhero(answers):
 
     q10 = answers[9]
     if q10 == 'A':
-        counter['Wonderman'] += 1
+        counter['Wonderwoman'] += 1
         counter['Hulk'] += 1
-        counter['Wolverin'] += 1
+        counter['Wolverine'] += 1
     elif q10 == 'B':
         counter['Batman'] += 1
     elif q10 == 'C':
         counter['Spiderman'] += 1
         counter['Aquaman'] += 1
     elif q10 == 'D':
-        counter['Wolverin'] += 1
+        counter['Wolverine'] += 1
 
     return max(counter, key=counter.get) # calculates which superhero user got given a list of the answers from the quiz
-
-
  
 @app.route('/')
 def main(): 
