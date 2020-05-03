@@ -12,7 +12,7 @@ def superhero(answers):
     'Spiderman' : 0,
     'Ironman' : 0,
     'Hulk' : 0,
-    'Wolverin' : 0
+    'Wolverine' : 0
     }
 
     q1 = answers[0]
