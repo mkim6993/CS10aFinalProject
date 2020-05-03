@@ -1,228 +1,86 @@
 {
-    "questions": [
-        {
-            "title" : "What is your weakness?", 
-            "responses" : [
-                {
-                    "key" : "A",
-                    "description" : "You try to do too much"
-                },
-                {
-                    "key" : "B",
-                    "description" : "Psychological trauma from the past"
-                },
-                {
-                    "key" : "C",
-                    "description" : "You rely on others too much"
-                },
-                {
-                    "key" : "D",
-                    "description" : "You love attention"
-                },
-                {
-                    "key" : "E",
-                    "description" : "Your ego"
-                },
-                {
-                    "key" : "F",
-                    "description" : "You're destructive"
-                },
-                {
-                    "key" : "G",
-                    "description" : "You are insensitive to others"
-                }
-            ]
-        },
-        {
-            "title" : "Which day-to-day mode of transportation do you prefer?", 
-            "responses" : [
-                {
-                    "key" : "A",
-                    "description" : "Bike"
-                },
-                {
-                    "key" : "B",
-                    "description" : "Car"
-                },
-                {
-                    "key" : "C",
-                    "description" : "Uber"
-                },
-                {
-                    "key" : "D",
-                    "description" : "Motorcycle"
-                }
-            ]
-        },
-         {
-            "title" : "What is your Strength?", 
-            "responses" : [
-                {
-                    "key" : "A",
-                    "description" : "You're trustworthy"
-                },
-                {
-                    "key" : "B",
-                    "description" : "You're passionate"
-                },
-                {
-                    "key" : "C",
-                    "description" : "You're protective"
-                },
-                {
-                    "key" : "D",
-                    "description" : "You have good gut feelings"
-                },
-                {
-                    "key" : "E",
-                    "description" : "You're intelligent"
-                },
-                {
-                    "key" : "F",
-                    "description" : "You use anger to your advantage"
-                },
-                {
-                    "key" : "G",
-                    "description" : "You have a good heart"
-                }
-            ]
-        },
-        {
-            "title" : "What superpower do you want to have?", 
-            "responses" : [
-                {
-                    "key" : "A",
-                    "description" : "Superstrength"
-                },
-                {
-                    "key" : "B",
-                    "description" : "Extreme flexibility"
-                },
-                {
-                    "key" : "C",
-                    "description" : "Ingenuity"
-                }
-            ]
-        },
-        {
-            "title" : "What weapon would you want to have?", 
-            "responses" : [
-                {
-                    "key" : "A",
-                    "description" : "None"
-                },
-                {
-                    "key" : "B",
-                    "description" : "Trident"
-                },
-                {
-                    "key" : "C",
-                    "description" : "Claws"
-                },
-                {
-                    "key" : "D",
-                    "description" : "Armor"
-                }
-            ]
-        },
-        {
-            "title" : "Who is the first person you would save from danger?", 
-            "responses" : [
-                {
-                    "key" : "A",
-                    "description" : "Elderly man"
-                },
-                {
-                    "key" : "B",
-                    "description" : "Woman in her 30s"
-                },
-                {
-                    "key" : "C",
-                    "description" : "A baby"
-                },
-                {
-                    "key" : "D",
-                    "description" : "A child"
-                }
-            ]
-        },
-        {
-            "title" : "What was your childhood like?", 
-            "responses" : [
-                {
-                    "key" : "A",
-                    "description" : "Normal"
-                },
-                {
-                    "key" : "B",
-                    "description" : "Dark"
-                },
-                {
-                    "key" : "C",
-                    "description" : "Lonely"
-                }
-            ]
-        },
-        {
-            "title" : "What high school club were you a part of?", 
-            "responses" : [
-                {
-                    "key" : "A",
-                    "description" : "Science clubs"
-                },
-                {
-                    "key" : "B",
-                    "description" : "Drama club"
-                },
-                {
-                    "key" : "C",
-                    "description" : "Student council"
-                }
-            ]
-        },
-        {
-            "title" : "What are you more likely to do during quarantine?", 
-            "responses" : [
-                {
-                    "key" : "A",
-                    "description" : "Read a book"
-                },
-                {
-                    "key" : "B",
-                    "description" : "Watch netflix"
-                },
-                {
-                    "key" : "C",
-                    "description" : "Work on a personal project"
-                },
-                {
-                    "key" : "D",
-                    "description" : "Exercise"
-                }
-            ]
-        },
-        {
-            "title" : "What is your favorite TV/Movie genre?", 
-            "responses" : [
-                {
-                    "key" : "A",
-                    "description" : "Action"
-                },
-                {
-                    "key" : "B",
-                    "description" : "Horror"
-                },
-                {
-                    "key" : "C",
-                    "description" : "Comedy"
-                },
-                {
-                    "key" : "D",
-                    "description" : "Adventure"
-                }
-            ]
-        }
-    ]
+    "questions": [{
+        "title": "What is your weakness?",
+        "responses": [
+            "You try to do too much",
+            "Psychological trauma from the past",
+            "You rely on others too much",
+            "You love attention",
+            "Your ego",
+            "You're destructive",
+            "You are insensitive to others"
+        ]
+    }, {
+        "title": "Which day-to-day mode of transportation do you prefer?",
+        "responses": [
+            "Bike",
+            "Car",
+            "Uber",
+            "Motorcycle"
+        ]
+    }, {
+        "title": "What is your Strength?",
+        "responses": [
+            "You're trustworthy",
+            "You're passionate",
+            "You're protective",
+            "You have good gut feelings",
+            "You're intelligent",
+            "You use anger to your advantage",
+            "You have a good heart"
+        ]
+    }, {
+        "title": "What superpower do you want to have?",
+        "responses": [
+            "Superstrength",
+            "Extreme flexibility",
+            "Ingenuity"
+        ]
+    }, {
+        "title": "What weapon would you want to have?",
+        "responses": [
+            "None",
+            "Trident",
+            "Claws",
+            "Armor"
+        ]
+    }, {
+        "title": "Who is the first person you would save from danger?",
+        "responses": [
+            "Elderly man",
+            "Woman in her 30s",
+            "A baby",
+            "A child"
+        ]
+    }, {
+        "title": "What was your childhood like?",
+        "responses": [
+            "Normal",
+            "Dark",
+            "Lonely"
+        ]
+    }, {
+        "title": "What high school club were you a part of?",
+        "responses": [
+            "Science clubs",
+            "Drama club",
+            "Student council"
+        ]
+    }, {
+        "title": "What are you more likely to do during quarantine?",
+        "responses": [
+            "Read a book",
+            "Watch netflix",
+            "Work on a personal project",
+            "Exercise"
+        ]
+    }, {
+        "title": "What is your favorite TV/Movie genre?",
+        "responses": [
+            "Action",
+            "Horror",
+            "Comedy",
+            "Adventure"
+        ]
+    }]
 }
-
-
