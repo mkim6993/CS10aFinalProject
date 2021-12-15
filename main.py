@@ -147,14 +147,14 @@ def superhero(answers):
         counter['Aquaman'] += 1
     elif q10 == 'D':
         counter['Wolverine'] += 1
-<<<<<<< HEAD
+#<<<<<<< HEAD
 
     return max(counter, key=counter.get)
  # calculates which superhero user got given a list of the answers from the quiz
-=======
+#=======
     
     return max(counter, key=counter.get) # calculates which superhero user got given a list of the answers from the quiz
->>>>>>> caf74c761f01e8a0caeecfecdfd3273f618e9ccc
+#>>>>>>> caf74c761f01e8a0caeecfecdfd3273f618e9ccc
  
 @app.route('/')
 def main(): 
